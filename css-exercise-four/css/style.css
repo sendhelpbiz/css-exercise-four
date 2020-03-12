@@ -3,34 +3,40 @@
 }
 
 body {
+	display: block;
   background-color: #dadada;
   font-size: 10px;
 }
 
 .title {
   text-transform: uppercase;
-  font-family: system-ui; sans-serif:
+  font-family: system-ui, sans-serif;
   margin: 2em;
+  padding-bottom: 2%;
 }
 
 .container {
+	display: grid;
     width: 100%;
-    background-color: #FFF0;
-    width: 100%;
+    background-color: #B4B4B4;
     text-align: center;
+	padding: 2%;
 }
 
 h1 {
-    font-family:serif;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
     font-size: 2em;
+	padding-top: 5%;
 }
+
 
 
 .preview{
     width: 100%;
     height: 30em;
-    padding: 20px;
     text-align: left;
+	padding-left: 5%;
+	margin-bottom: 4%;
 }
 
 .baku {
@@ -57,26 +63,15 @@ h1 {
 
 
 @media screen and (min-width: 575px) {
-   .preview {
-     float: left;
-     width: 50%;
-   }
+   .main {
+	 column-count: 2;
+     width: 100%;
+	}
 
-/*Ipad response*/
-@media screen and (min-width: 768px) {
-   .preview {
-     float: left;
-     width: 25%;
-   }
-
-/* @media screen and (min weidth: 991px) {
-  selector { property: value; }
 }
- */
-
-/*(7) make sure images don't stretch*/
-@media screen and (min-width: 991px) {
-  .preview {
-    float: left;
-    width: 25%;
-  }
+@media screen and (min-width: 768px) {
+   .main {
+	 column-count: 4;
+     width: 100%;
+   }
+}
